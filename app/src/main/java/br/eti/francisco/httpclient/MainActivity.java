@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     jsonObject.put("score", 123);
                     jsonObject.put("facebookId", 1234);
                     HttpClient httpclient = new DefaultHttpClient();
-                    HttpPost post = new HttpPost("http://192.168.46.53:8080/ranking/services/score/sendScore");
+                    HttpPost post = new HttpPost("http://acesso.ws/ranking/services/score/sendScore");
 
                     post.setEntity(new StringEntity(jsonObject.toString(), "UTF8"));
                     post.setHeader("Content-type", "application/json");
